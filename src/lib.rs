@@ -61,11 +61,36 @@ pub fn generate_font_size_utilities() -> String {
     css
 }
 
+pub fn generate_font_weight_utilities() -> String {
+    let weights = vec![
+        ("thin", "100"),
+        ("extralight", "200"),
+        ("light", "300"),
+        ("normal", "400"),
+        ("medium", "500"),
+        ("semibold", "600"),
+        ("bold", "700"),
+        ("extrabold", "800"),
+        ("black", "900"),
+    ];
+
+    let mut css = String::new();
+
+    for (name, value) in weights {
+        css.push_str(&format!(".font-{} {{ font-weight: {}; }}\n", name, value));
+    }
+
+    css
+}
+
+
 pub fn generate_css() -> String {
     format!(
-        "{}{}{}",
+        "{}{}{}{}",
         generate_bg_color_utilities(),
         generate_padding_utilities(),
-        generate_font_size_utilities()
+        generate_font_size_utilities(),
+        generate_font_weight_utilities
+
     )
 }
