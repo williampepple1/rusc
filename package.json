@@ -1,0 +1,19 @@
+{
+  "name": "russ",
+  "version": "1.0.0",
+  "description": " A utility-first CSS framework generated with Rust",
+  "main": "dist/output.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/williampepple1/russ.git"
+  },
+  "author": "William Pepple",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/williampepple1/russ/issues"
+  },
+  "homepage": "https://github.com/williampepple1/russ#readme"
+}
