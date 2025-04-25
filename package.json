@@ -1,5 +1,5 @@
 {
-  "name": "rustcss",
+  "name": "rusc",
   "version": "1.0.0",
   "description": " A utility-first CSS framework generated with Rust",
   "main": "dist/output.css",
