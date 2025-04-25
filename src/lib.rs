@@ -83,14 +83,28 @@ pub fn generate_font_weight_utilities() -> String {
     css
 }
 
+pub fn generate_font_style_utilities() -> String {
+    let mut css = String::new();
+
+    css.push_str(".underline { text-decoration: underline; }\n");
+    css.push_str(".line-through { text-decoration: line-through; }\n");
+    css.push_str(".no-underline { text-decoration: none; }\n");
+
+    css.push_str(".italic { font-style: italic; }\n");
+    css.push_str(".not-italic { font-style: normal; }\n");
+
+    css
+}
+
 
 pub fn generate_css() -> String {
     format!(
-        "{}{}{}{}",
+        "{}{}{}{}{}",
         generate_bg_color_utilities(),
         generate_padding_utilities(),
         generate_font_size_utilities(),
-        generate_font_weight_utilities()
+        generate_font_weight_utilities(),
+        generate_font_style_utilities()
 
     )
 }
