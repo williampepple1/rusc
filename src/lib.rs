@@ -67,7 +67,7 @@ pub fn generate_font_size_utilities() -> String {
 #[wasm_bindgen]
 pub fn generate_css() -> String {
     format!(
-        "{}{}",
+        "{}{}{}",
         generate_bg_color_utilities(),
         generate_padding_utilities(),
         generate_font_size_utilities()
