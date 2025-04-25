@@ -1,5 +1,6 @@
 fn main() {
     let css = russ::generate_css(); // From your lib.rs
-    std::fs::write("output.css", css).expect("Unable to write CSS file");
-    println!("✅ CSS generated at output.css");
+    std::fs::create_dir_all("dist").unwrap();
+    std::fs::write("dist/output.css", css).expect("Failed to write dist/output.css");
+    println!("✅ dist/output.css generated!");
 }
