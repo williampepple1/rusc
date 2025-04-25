@@ -1,7 +1,6 @@
-use wasm_bindgen::prelude::*;
+// src/lib.rs
 use std::collections::HashMap;
 
-#[wasm_bindgen]
 pub fn generate_bg_color_utilities() -> String {
     let mut colors = HashMap::new();
     colors.insert("red", vec!["#fee2e2", "#fca5a5", "#f87171", "#ef4444", "#dc2626"]);
@@ -22,7 +21,6 @@ pub fn generate_bg_color_utilities() -> String {
     css
 }
 
-#[wasm_bindgen]
 pub fn generate_padding_utilities() -> String {
     let spacings = vec![0, 1, 2, 3, 4, 5];
     let mut css = String::new();
@@ -41,7 +39,6 @@ pub fn generate_padding_utilities() -> String {
     css
 }
 
-#[wasm_bindgen]
 pub fn generate_font_size_utilities() -> String {
     let sizes = vec![
         ("xs", "0.75rem"),
@@ -64,7 +61,6 @@ pub fn generate_font_size_utilities() -> String {
     css
 }
 
-#[wasm_bindgen]
 pub fn generate_css() -> String {
     format!(
         "{}{}{}",
