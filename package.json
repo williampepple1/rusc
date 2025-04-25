@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": " A utility-first CSS framework generated with Rust",
   "main": "dist/output.css",
+  "files": [
+    "dist/output.css"
+  ],
+  "keywords": ["css", "framework", "utility-first"],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
