@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/williampepple1/russ.git"
+    "url": "git+https://github.com/williampepple1/rusc.git"
   },
   "author": "William Pepple",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/williampepple1/russ/issues"
+    "url": "https://github.com/williampepple1/rusc/issues"
   },
-  "homepage": "https://github.com/williampepple1/russ#readme"
+  "homepage": "https://github.com/williampepple1/rusc#readme"
 }
