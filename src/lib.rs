@@ -90,7 +90,7 @@ pub fn generate_css() -> String {
         generate_bg_color_utilities(),
         generate_padding_utilities(),
         generate_font_size_utilities(),
-        generate_font_weight_utilities
+        generate_font_weight_utilities()
 
     )
 }
