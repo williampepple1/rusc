@@ -42,10 +42,34 @@ pub fn generate_padding_utilities() -> String {
 }
 
 #[wasm_bindgen]
+pub fn generate_font_size_utilities() -> String {
+    let sizes = vec![
+        ("xs", "0.75rem"),
+        ("sm", "0.875rem"),
+        ("base", "1rem"),
+        ("lg", "1.125rem"),
+        ("xl", "1.25rem"),
+        ("2xl", "1.5rem"),
+        ("3xl", "1.875rem"),
+        ("4xl", "2.25rem"),
+        ("5xl", "3rem"),
+    ];
+
+    let mut css = String::new();
+
+    for (name, value) in sizes {
+        css.push_str(&format!(".text-{} {{ font-size: {}; }}\n", name, value));
+    }
+
+    css
+}
+
+#[wasm_bindgen]
 pub fn generate_css() -> String {
     format!(
         "{}{}",
         generate_bg_color_utilities(),
-        generate_padding_utilities()
+        generate_padding_utilities(),
+        generate_font_size_utilities()
     )
 }
