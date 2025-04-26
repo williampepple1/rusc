@@ -94,3 +94,35 @@ pub fn generate_max_width_utilities() -> String {
 
     css
 }
+
+pub fn generate_min_width_utilities() -> String {
+    let sizes = vec![
+        ("0", "0px"),
+        ("full", "100%"),
+        ("screen", "100vw"),
+    ];
+
+    let mut css = String::new();
+
+    for (name, value) in sizes {
+        css.push_str(&format!(".min-w-{} {{ min-width: {}; }}\n", name, value));
+    }
+
+    css
+}
+
+pub fn generate_min_height_utilities() -> String {
+    let sizes = vec![
+        ("0", "0px"),
+        ("full", "100%"),
+        ("screen", "100vh"),
+    ];
+
+    let mut css = String::new();
+
+    for (name, value) in sizes {
+        css.push_str(&format!(".min-h-{} {{ min-height: {}; }}\n", name, value));
+    }
+
+    css
+}
