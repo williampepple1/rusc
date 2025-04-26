@@ -75,7 +75,7 @@ export default function App() {
 
 ---
 
-## 📦 NPM (Coming Soon)
+## 📦 NPM
 
 install it using 
 
