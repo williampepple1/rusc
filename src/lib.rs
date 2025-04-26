@@ -8,6 +8,16 @@ use utils::border::{generate_border_radius_utilities, generate_border_width_util
 use utils::effect::{generate_hover_focus_utilities, generate_hover_focus_for_utilities, generate_dark_mode_utilities, generate_active_state_utilities};
 use utils::responsive::wrap_with_responsive_variants;
 
+pub fn minify_css(css: &str) -> String {
+    css
+        .lines()
+        .map(|line| line.trim())     // Remove leading/trailing whitespace
+        .filter(|line| !line.is_empty()) // Skip empty lines
+        .collect::<Vec<_>>()
+        .join("")                     // Join without newlines
+}
+
+
 pub fn generate_css() -> String {
     let base_css =    
     
@@ -42,12 +52,14 @@ pub fn generate_css() -> String {
     let dark_mode_css = generate_dark_mode_utilities();
     let active_state_css = generate_active_state_utilities();
 
-    format!(
+ let full_css =   format!(
         "{}{}{}{}{}",
         base_css,
         hover_focus_css,
         dark_mode_css,
         active_state_css,
         responsive_css
-    )
+    );
+
+    minify_css(&full_css) 
 }
