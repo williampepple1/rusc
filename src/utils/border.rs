@@ -23,3 +23,26 @@ pub fn generate_border_radius_utilities() -> String {
 
     css
 }
+
+pub fn generate_border_width_utilities() -> String {
+    let widths = vec![
+        ("", "1px"),      // default `.border`
+        ("2", "2px"),
+        ("4", "4px"),
+        ("8", "8px"),
+    ];
+
+    let mut css = String::new();
+
+    for (name, value) in widths {
+        if name.is_empty() {
+            css.push_str(&format!(".border {{ border-width: {}; }}\n", value));
+        } else {
+            css.push_str(&format!(".border-{} {{ border-width: {}; }}\n", name, value));
+        }
+    }
+
+    css
+}
+
+
