@@ -1,8 +1,18 @@
+.bg-black-100 { background-color: #6b7280; }
+.bg-black-200 { background-color: #4b5563; }
+.bg-black-300 { background-color: #374151; }
+.bg-black-400 { background-color: #1f2937; }
+.bg-black-500 { background-color: #000000; }
 .bg-red-100 { background-color: #fee2e2; }
 .bg-red-200 { background-color: #fca5a5; }
 .bg-red-300 { background-color: #f87171; }
 .bg-red-400 { background-color: #ef4444; }
 .bg-red-500 { background-color: #dc2626; }
+.bg-white-100 { background-color: #ffffff; }
+.bg-white-200 { background-color: #f9fafb; }
+.bg-white-300 { background-color: #f3f4f6; }
+.bg-white-400 { background-color: #e5e7eb; }
+.bg-white-500 { background-color: #d1d5db; }
 .bg-green-100 { background-color: #d1fae5; }
 .bg-green-200 { background-color: #6ee7b7; }
 .bg-green-300 { background-color: #34d399; }
@@ -18,16 +28,6 @@
 .bg-yellow-300 { background-color: #fde047; }
 .bg-yellow-400 { background-color: #facc15; }
 .bg-yellow-500 { background-color: #eab308; }
-.bg-white-100 { background-color: #ffffff; }
-.bg-white-200 { background-color: #f9fafb; }
-.bg-white-300 { background-color: #f3f4f6; }
-.bg-white-400 { background-color: #e5e7eb; }
-.bg-white-500 { background-color: #d1d5db; }
-.bg-black-100 { background-color: #6b7280; }
-.bg-black-200 { background-color: #4b5563; }
-.bg-black-300 { background-color: #374151; }
-.bg-black-400 { background-color: #1f2937; }
-.bg-black-500 { background-color: #000000; }
 .p-0 { padding: 0px; }
 .pt-0 { padding-top: 0px; }
 .pr-0 { padding-right: 0px; }
@@ -135,21 +135,21 @@
 .ml-20 { margin-left: 20px; }
 .mx-20 { margin-left: 20px; margin-right: 20px; }
 .my-20 { margin-top: 20px; margin-bottom: 20px; }
-.text-red-100 { color: #fee2e2; }
-.text-red-200 { color: #fca5a5; }
-.text-red-300 { color: #f87171; }
-.text-red-400 { color: #ef4444; }
-.text-red-500 { color: #dc2626; }
-.text-yellow-100 { color: #fef9c3; }
-.text-yellow-200 { color: #fef08a; }
-.text-yellow-300 { color: #fde047; }
-.text-yellow-400 { color: #facc15; }
-.text-yellow-500 { color: #eab308; }
+.text-green-100 { color: #d1fae5; }
+.text-green-200 { color: #6ee7b7; }
+.text-green-300 { color: #34d399; }
+.text-green-400 { color: #10b981; }
+.text-green-500 { color: #059669; }
 .text-white-100 { color: #ffffff; }
 .text-white-200 { color: #f9fafb; }
 .text-white-300 { color: #f3f4f6; }
 .text-white-400 { color: #e5e7eb; }
 .text-white-500 { color: #d1d5db; }
+.text-red-100 { color: #fee2e2; }
+.text-red-200 { color: #fca5a5; }
+.text-red-300 { color: #f87171; }
+.text-red-400 { color: #ef4444; }
+.text-red-500 { color: #dc2626; }
 .text-black-100 { color: #6b7280; }
 .text-black-200 { color: #4b5563; }
 .text-black-300 { color: #374151; }
@@ -160,11 +160,11 @@
 .text-blue-300 { color: #60a5fa; }
 .text-blue-400 { color: #3b82f6; }
 .text-blue-500 { color: #2563eb; }
-.text-green-100 { color: #d1fae5; }
-.text-green-200 { color: #6ee7b7; }
-.text-green-300 { color: #34d399; }
-.text-green-400 { color: #10b981; }
-.text-green-500 { color: #059669; }
+.text-yellow-100 { color: #fef9c3; }
+.text-yellow-200 { color: #fef08a; }
+.text-yellow-300 { color: #fde047; }
+.text-yellow-400 { color: #facc15; }
+.text-yellow-500 { color: #eab308; }
 .h-0 { height: 0px; }
 .h-4 { height: 4px; }
 .h-8 { height: 8px; }
@@ -248,26 +248,6 @@
 .border-2 { border-width: 2px; }
 .border-4 { border-width: 4px; }
 .border-8 { border-width: 8px; }
-.border-black-100 { border-color: #6b7280; }
-.border-black-200 { border-color: #4b5563; }
-.border-black-300 { border-color: #374151; }
-.border-black-400 { border-color: #1f2937; }
-.border-black-500 { border-color: #000000; }
-.border-blue-100 { border-color: #dbeafe; }
-.border-blue-200 { border-color: #93c5fd; }
-.border-blue-300 { border-color: #60a5fa; }
-.border-blue-400 { border-color: #3b82f6; }
-.border-blue-500 { border-color: #2563eb; }
-.border-yellow-100 { border-color: #fef9c3; }
-.border-yellow-200 { border-color: #fef08a; }
-.border-yellow-300 { border-color: #fde047; }
-.border-yellow-400 { border-color: #facc15; }
-.border-yellow-500 { border-color: #eab308; }
-.border-white-100 { border-color: #ffffff; }
-.border-white-200 { border-color: #f9fafb; }
-.border-white-300 { border-color: #f3f4f6; }
-.border-white-400 { border-color: #e5e7eb; }
-.border-white-500 { border-color: #d1d5db; }
 .border-green-100 { border-color: #d1fae5; }
 .border-green-200 { border-color: #6ee7b7; }
 .border-green-300 { border-color: #34d399; }
@@ -278,6 +258,26 @@
 .border-red-300 { border-color: #f87171; }
 .border-red-400 { border-color: #ef4444; }
 .border-red-500 { border-color: #dc2626; }
+.border-blue-100 { border-color: #dbeafe; }
+.border-blue-200 { border-color: #93c5fd; }
+.border-blue-300 { border-color: #60a5fa; }
+.border-blue-400 { border-color: #3b82f6; }
+.border-blue-500 { border-color: #2563eb; }
+.border-white-100 { border-color: #ffffff; }
+.border-white-200 { border-color: #f9fafb; }
+.border-white-300 { border-color: #f3f4f6; }
+.border-white-400 { border-color: #e5e7eb; }
+.border-white-500 { border-color: #d1d5db; }
+.border-yellow-100 { border-color: #fef9c3; }
+.border-yellow-200 { border-color: #fef08a; }
+.border-yellow-300 { border-color: #fde047; }
+.border-yellow-400 { border-color: #facc15; }
+.border-yellow-500 { border-color: #eab308; }
+.border-black-100 { border-color: #6b7280; }
+.border-black-200 { border-color: #4b5563; }
+.border-black-300 { border-color: #374151; }
+.border-black-400 { border-color: #1f2937; }
+.border-black-500 { border-color: #000000; }
 .border-solid { border-style: solid; }
 .border-dashed { border-style: dashed; }
 .border-dotted { border-style: dotted; }
@@ -311,3 +311,10 @@
 .rounded-tr-full { border-top-right-radius: 9999px; }
 .rounded-bl-full { border-bottom-left-radius: 9999px; }
 .rounded-br-full { border-bottom-right-radius: 9999px; }
+.shadow-sm { box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); }
+.shadow { box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); }
+.shadow-md { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+.shadow-lg { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); }
+.shadow-xl { box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); }
+.shadow-2xl { box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); }
+.shadow-none { box-shadow: none; }
