@@ -24,6 +24,30 @@ pub fn generate_border_radius_utilities() -> String {
     css
 }
 
+pub fn generate_border_corner_radius_utilities() -> String {
+    let radii = vec![
+        ("none", "0px"),
+        ("sm", "0.125rem"),
+        ("md", "0.375rem"),
+        ("lg", "0.5rem"),
+        ("xl", "0.75rem"),
+        ("2xl", "1rem"),
+        ("full", "9999px"),
+    ];
+
+    let mut css = String::new();
+
+    for (name, value) in radii.iter() {
+        css.push_str(&format!(".rounded-tl-{} {{ border-top-left-radius: {}; }}\n", name, value));
+        css.push_str(&format!(".rounded-tr-{} {{ border-top-right-radius: {}; }}\n", name, value));
+        css.push_str(&format!(".rounded-bl-{} {{ border-bottom-left-radius: {}; }}\n", name, value));
+        css.push_str(&format!(".rounded-br-{} {{ border-bottom-right-radius: {}; }}\n", name, value));
+    }
+
+    css
+}
+
+
 pub fn generate_border_width_utilities() -> String {
     let widths = vec![
         ("", "1px"),      // default `.border`
