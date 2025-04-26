@@ -21,3 +21,14 @@ pub fn generate_bg_color_utilities() -> String {
 
     css
 }
+
+pub fn generate_background_gradient_utilities() -> String {
+    let mut css = String::new();
+
+    css.push_str(".bg-gradient-to-r { background-image: linear-gradient(to right, var(--tw-gradient-stops)); }\n");
+    css.push_str(".bg-gradient-to-l { background-image: linear-gradient(to left, var(--tw-gradient-stops)); }\n");
+    css.push_str(".bg-gradient-to-t { background-image: linear-gradient(to top, var(--tw-gradient-stops)); }\n");
+    css.push_str(".bg-gradient-to-b { background-image: linear-gradient(to bottom, var(--tw-gradient-stops)); }\n");
+
+    css
+}
