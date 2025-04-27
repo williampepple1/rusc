@@ -52,3 +52,21 @@ pub fn generate_justify_content_utilities() -> String {
 
     css
 }
+
+pub fn generate_align_items_utilities() -> String {
+    let alignments = vec![
+        ("start", "flex-start"),
+        ("center", "center"),
+        ("end", "flex-end"),
+        ("baseline", "baseline"),
+        ("stretch", "stretch"),
+    ];
+
+    let mut css = String::new();
+
+    for (class, value) in alignments {
+        css.push_str(&format!(".items-{} {{ align-items: {}; }}\n", class, value));
+    }
+
+    css
+}
