@@ -5,3 +5,4 @@ pub mod layout;
 pub mod border;
 pub mod effect;
 pub mod responsive;
+pub mod direction;
