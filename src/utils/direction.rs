@@ -70,3 +70,18 @@ pub fn generate_align_items_utilities() -> String {
 
     css
 }
+
+
+pub fn generate_gap_utilities() -> String {
+    let gaps = vec![0, 1, 2, 3, 4, 5, 6, 8, 10];
+
+    let mut css = String::new();
+
+    for gap in gaps {
+        css.push_str(&format!(".gap-{} {{ gap: {}px; }}\n", gap, gap * 4)); // Adjust the multiplier as necessary
+        css.push_str(&format!(".gap-x-{} {{ column-gap: {}px; }}\n", gap, gap * 4));
+        css.push_str(&format!(".gap-y-{} {{ row-gap: {}px; }}\n", gap, gap * 4));
+    }
+
+    css
+}
