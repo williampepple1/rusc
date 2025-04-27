@@ -7,7 +7,7 @@ use utils::layout::{generate_padding_utilities, generate_margin_utilities, gener
 use utils::border::{generate_border_radius_utilities, generate_border_width_utilities, generate_border_color_utilities, generate_border_style_utilities, generate_border_corner_radius_utilities, generate_shadow_utilities};
 use utils::effect::{generate_hover_focus_utilities, generate_hover_focus_for_utilities, generate_dark_mode_utilities, generate_active_state_utilities};
 use utils::responsive::wrap_with_responsive_variants;
-use utils::direction::{generate_display_utilities, generate_flex_direction_utilities};
+use utils::direction::{generate_display_utilities, generate_flex_direction_utilities, generate_justify_content_utilities};
 
 pub fn minify_css(css: &str) -> String {
     css
@@ -23,7 +23,7 @@ pub fn generate_css() -> String {
     let base_css =    
     
      format!(
-        "{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}",
+        "{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}",
         generate_bg_color_utilities(),
         generate_padding_utilities(),
         generate_font_size_utilities(),
@@ -48,7 +48,8 @@ pub fn generate_css() -> String {
         generate_text_alignment_utilities(),
         generate_line_height_utilities(),
         generate_display_utilities(),
-        generate_flex_direction_utilities()
+        generate_flex_direction_utilities(),
+        generate_justify_content_utilities()
 
     );
     

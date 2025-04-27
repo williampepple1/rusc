@@ -33,3 +33,22 @@ pub fn generate_flex_direction_utilities() -> String {
 
     css
 }
+
+pub fn generate_justify_content_utilities() -> String {
+    let alignments = vec![
+        ("center", "center"),
+        ("start", "flex-start"),
+        ("end", "flex-end"),
+        ("between", "space-between"),
+        ("around", "space-around"),
+        ("evenly", "space-evenly"),
+    ];
+
+    let mut css = String::new();
+
+    for (class, value) in alignments {
+        css.push_str(&format!(".justify-{} {{ justify-content: {}; }}\n", class, value));
+    }
+
+    css
+}
