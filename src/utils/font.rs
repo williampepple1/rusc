@@ -54,3 +54,38 @@ pub fn generate_font_style_utilities() -> String {
 
     css
 }
+
+pub fn generate_text_alignment_utilities() -> String {
+    let alignments = vec![
+        ("left", "left"),
+        ("center", "center"),
+        ("right", "right"),
+        ("justify", "justify"),
+    ];
+
+    let mut css = String::new();
+
+    for (alignment, value) in alignments {
+        css.push_str(&format!(".text-{} {{ text-align: {}; }}\n", alignment, value));
+    }
+
+    css
+}
+
+pub fn generate_line_height_utilities() -> String {
+    let line_heights = vec![
+        ("tight", "1.25"),
+        ("snug", "1.375"),
+        ("normal", "1.5"),
+        ("relaxed", "1.625"),
+        ("loose", "2"),
+    ];
+
+    let mut css = String::new();
+
+    for (height, value) in line_heights {
+        css.push_str(&format!(".leading-{} {{ line-height: {}; }}\n", height, value));
+    }
+
+    css
+}
