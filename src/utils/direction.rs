@@ -16,3 +16,20 @@ pub fn generate_display_utilities() -> String {
 
     css
 }
+
+pub fn generate_flex_direction_utilities() -> String {
+    let directions = vec![
+        ("row", "row"),
+        ("col", "column"),
+        ("row-reverse", "row-reverse"),
+        ("col-reverse", "column-reverse"),
+    ];
+
+    let mut css = String::new();
+
+    for (class, value) in directions {
+        css.push_str(&format!(".flex-{} {{ flex-direction: {}; }}\n", class, value));
+    }
+
+    css
+}
