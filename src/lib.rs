@@ -9,14 +9,14 @@ use utils::effect::{generate_hover_focus_utilities, generate_hover_focus_for_uti
 use utils::responsive::wrap_with_responsive_variants;
 use utils::direction::{generate_display_utilities, generate_flex_direction_utilities, generate_justify_content_utilities, generate_align_items_utilities};
 
-pub fn minify_css(css: &str) -> String {
-    css
-        .lines()
-        .map(|line| line.trim())     // Remove leading/trailing whitespace
-        .filter(|line| !line.is_empty()) // Skip empty lines
-        .collect::<Vec<_>>()
-        .join("")                     // Join without newlines
-}
+// pub fn minify_css(css: &str) -> String {
+//     css
+//         .lines()
+//         .map(|line| line.trim())     // Remove leading/trailing whitespace
+//         .filter(|line| !line.is_empty()) // Skip empty lines
+//         .collect::<Vec<_>>()
+//         .join("")                     // Join without newlines
+// }
 
 
 pub fn generate_css() -> String {
@@ -59,14 +59,17 @@ pub fn generate_css() -> String {
     let dark_mode_css = generate_dark_mode_utilities();
     let active_state_css = generate_active_state_utilities();
 
- let full_css =   format!(
+//  let full_css =  
+  format!(
         "{}{}{}{}{}",
         base_css,
         hover_focus_css,
         dark_mode_css,
         active_state_css,
         responsive_css
-    );
+    )
 
-    minify_css(&full_css) 
+    // minify_css(&full_css) 
+
+    
 }
